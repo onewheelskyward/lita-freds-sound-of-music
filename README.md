@@ -1,22 +1,18 @@
-# lita-automatic-pancake
+# lita-onewheel-freds-sound-of-music
 
-[![Build Status](https://travis-ci.org/onewheelskyward/lita-automatic-pancake.png?branch=master)](https://travis-ci.org/onewheelskyward/lita-automatic-pancake)
-[![Coverage Status](https://coveralls.io/repos/onewheelskyward/lita-automatic-pancake/badge.png)](https://coveralls.io/r/onewheelskyward/lita-automatic-pancake)
+[![Build Status](https://travis-ci.org/onewheelskyward/lita-onewheel-freds-sound-of-music.png?branch=master)](https://travis-ci.org/onewheelskyward/lita-onewheel-freds-sound-of-music)
+[![Coverage Status](https://coveralls.io/repos/onewheelskyward/lita-onewheel-freds-sound-of-music/badge.png)](https://coveralls.io/r/onewheelskyward/lita-onewheel-freds-sound-of-music)
 
-TODO: Add a description of the plugin.
+Fred's sound of music used gear interface.
 
 ## Installation
 
-Add lita-automatic-pancake to your Lita instance's Gemfile:
+Add lita-onewheel-freds-sound-of-music to your Lita instance's Gemfile:
 
 ``` ruby
-gem "lita-onewheel-"
+gem "lita-onewheel-freds-sound-of-music"
 ```
-
-## Configuration
-
-TODO: Describe any configuration attributes the plugin exposes.
 
 ## Usage
 
-TODO: Describe the plugin's features and how to use them.
+!freds <search>
