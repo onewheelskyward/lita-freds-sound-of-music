@@ -1,9 +1,9 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-onewheel-freds-sound-of-music'
-  spec.version       = '0.0.0'
+  spec.version       = '0.0.1'
   spec.authors       = ['Andrew Kreps']
   spec.email         = ['andrew.kreps@gmail.com']
-  spec.description   = %q{Lita interface to Fred's sound of music.}
+  spec.description   = %q{Lita interface to Fred's sound of music used listings.}
   spec.summary       = %q{See above.}
   spec.homepage      = 'https://github.com/onewheelskyward/lita-onewheel-freds-sound-of-music'
   spec.license       = 'MIT'
@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'lita', '~> 4'
-  spec.add_runtime_dependency 'rest-client', '~> 2'
+  spec.add_runtime_dependency 'rest-client', '~> 1'
   spec.add_runtime_dependency 'nokogiri', '~> 1'
 
   spec.add_development_dependency 'bundler', '~> 1'
