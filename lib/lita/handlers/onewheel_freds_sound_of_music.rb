@@ -7,6 +7,7 @@ module Lita
       route(/^freds\s+(.*)/i, :freds_search, command: true, help: 'freds whatevs')
 
       def freds_search(response)
+        search_term = response.matches[0][0]
         doc = RestClient.get 'http://www.fredsoundofmusic.com/specials/pre-owned-components.html'
         noko_doc = Nokogiri::HTML doc
         tables = noko_doc.css('#rt-main table')
@@ -40,7 +41,13 @@ module Lita
             end
           end
           break if record[:brand].empty? and record[:model].empty?
-          records.push record
+
+          if record[:brand].match(/#{search_term}/i) or
+            record[:model].match(/#{search_term}/i) or
+            record[:description].match(/#{search_term}/i)
+
+            records.push record
+          end
         end
         format_output(response, records)
       end
