@@ -54,7 +54,8 @@ module Lita
 
       def format_output(response, records)
         records.each do |rec|
-          response.reply "#{rec[:brand]} #{rec[:model]} was $#{rec[:was_new]}, now $#{rec[:price]}"
+          query = "#{rec[:brand]} #{rec[:model]}".gsub /\s+/, '+'
+          response.reply "#{rec[:brand]} #{rec[:model]} was $#{rec[:was_new]}, now $#{rec[:price]}  https://google.com?q=#{query}"
         end
       end
 
