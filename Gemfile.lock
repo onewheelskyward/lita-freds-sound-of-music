@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lita-onewheel-freds-sound-of-music (0.1.1)
+    lita-onewheel-freds-sound-of-music (0.1.2)
       lita (~> 4)
       nokogiri (~> 1)
       rest-client (~> 1)
