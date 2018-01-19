@@ -4,7 +4,7 @@ require 'nokogiri'
 module Lita
   module Handlers
     class OnewheelFredsSoundOfMusic < Handler
-      route(/^freds\s+(.*)/i, :freds_search, command: true, help: 'freds whatevs')
+      route(/^freds\s+(.*)/i, :freds_search, command: true, help: {'!freds [search]' => 'Searches Fred\'s sound of music for your search term.'})
 
       def freds_search(response)
         search_term = response.matches[0][0]
